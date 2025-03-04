@@ -67,7 +67,7 @@ const Contact = () => {
           body: JSON.stringify(formData), 
         
         });
-        const data = await response.text(); // Use .text() to read the response
+        //const data = await response.text(); // Use .text() to read the response
     
         if (response.type=="opaque") {
           alert("Your message has been sent successfully!")
