@@ -19,8 +19,13 @@ interface PortfolioItem {
       id: "qa-agent",
       title: "QA Interview Agent",
       description: "An AI-driven interview agent for role-specific Q&A.",
-      image: "/src/assets/img/portfolio/app-1.jpg",
-      images: ["/src/assets/img/qa-agent.png", "/src/assets/img/qa-agent-2.png"], // Added array
+      image: `${import.meta.env.BASE_URL}src/assets/img/portfolio/app-1.jpg`,
+      images: [
+        `${import.meta.env.BASE_URL}src/assets/img/portfolio/app-1.jpg`,
+        `${import.meta.env.BASE_URL}src/assets/img/portfolio/app-2.jpg`,
+        `${import.meta.env.BASE_URL}src/assets/img/portfolio/app-3.jpg`,
+      
+      ], // Added array
       category: "ML",
       github: "https://github.com/yourusername/qa-interview-agent",
       blog: "https://yourblog.com/qa-agent",
@@ -30,8 +35,14 @@ interface PortfolioItem {
       id: "ats-resume",
       title: "ATS Resume & Cover Letter Generator",
       description: "A tool to generate ATS-friendly resumes and cover letters.",
-      image: "/src/assets/img/portfolio/product-1.jpg",
-      images: ["/src/assets/img/ats-resume.png"],
+      image: `${import.meta.env.BASE_URL}src/assets/img/portfolio/product-1.jpg`,
+      images:  [
+        `${import.meta.env.BASE_URL}src/assets/img/portfolio/product-1.jpg`,
+        `${import.meta.env.BASE_URL}src/assets/img/portfolio/product-2.jpg`,
+        `${import.meta.env.BASE_URL}src/assets/img/portfolio/product-3.jpg`,
+        
+
+      ],
       category: "React",
       github: "https://github.com/yourusername/ats-resume-generator",
       blog: "https://yourblog.com/ats-resume",
@@ -120,7 +131,7 @@ const Portfolio: React.FC = () => {
                 <h4>{project.title}</h4>
                   <p>{project.description}</p>
                
-                  <Link to={`/portfolio/${project.id}`} title="More Details" className="details-link"> <i className="bi bi-link-45deg"></i></Link>
+                  <Link to={`/portfol/${project.id}`} title="More Details" className="details-link"> <i className="bi bi-link-45deg"></i></Link>
                      <a
                     href={project.github}
                     target="_blank"

@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/style.css"; // Main styles
-import heroBg from "../assets/img/hero-bg.jpg";
+import heroBg from "../assets/img/hero-bg.jpg?url";
 
 const Home: React.FC = () => {
   return (

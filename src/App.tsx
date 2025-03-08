@@ -25,16 +25,16 @@ const App: React.FC = () => {
     };
     const loadScriptsSequentially = async () => {
       try {
-        await loadScript("/assets/vendor/bootstrap/js/bootstrap.bundle.min.js");
-        await loadScript("/assets/vendor/aos/aos.js");
-        await loadScript("/assets/vendor/typed.js/typed.umd.js");
-        await loadScript("/assets/vendor/purecounter/purecounter_vanilla.js");
-        await loadScript("/assets/vendor/waypoints/noframework.waypoints.js");
-        await loadScript("/assets/vendor/swiper/swiper-bundle.min.js");
-        await loadScript("/assets/vendor/glightbox/js/glightbox.min.js");
-        await loadScript("/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js");
-        await loadScript("/assets/vendor/isotope-layout/isotope.pkgd.min.js");
-        await loadScript("/assets/js/main.js");
+        await loadScript(`${import.meta.env.BASE_URL}assets/vendor/bootstrap/js/bootstrap.bundle.min.js`);
+        await loadScript(`${import.meta.env.BASE_URL}assets/vendor/aos/aos.js`);
+        await loadScript(`${import.meta.env.BASE_URL}assets/vendor/typed.js/typed.umd.js`);
+        await loadScript(`${import.meta.env.BASE_URL}assets/vendor/purecounter/purecounter_vanilla.js`);
+        await loadScript(`${import.meta.env.BASE_URL}assets/vendor/waypoints/noframework.waypoints.js`);
+        await loadScript(`${import.meta.env.BASE_URL}assets/vendor/swiper/swiper-bundle.min.js`);
+        await loadScript(`${import.meta.env.BASE_URL}assets/vendor/glightbox/js/glightbox.min.js`);
+        await loadScript(`${import.meta.env.BASE_URL}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js`);
+        await loadScript(`${import.meta.env.BASE_URL}assets/vendor/isotope-layout/isotope.pkgd.min.js`);
+        await loadScript(`${import.meta.env.BASE_URL}assets/js/main.js`);
       } catch (error) {
         console.error(error);
       }
@@ -53,13 +53,13 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <Router>
-      <Navbar name="Haripriya" logo="/src/assets/img/logo.png" />
+    <Router basename="/Portfolio/">
+      <Navbar name="Haripriya" logo={`${import.meta.env.BASE_URL}src/assets/img/logo.png`} />
       
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/portfolio/:id" element={<PortfolioDetails />} />
+        <Route path="/portfol" element={<Portfolio />} />
+        <Route path="/portfol/:id" element={<PortfolioDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
