@@ -41,7 +41,7 @@ const About = () => {
         <div className="container" data-aos="fade-up" data-aos-delay="100">
           <div className="row gy-4 justify-content-center">
             <div className="col-lg-4">
-              <img src={`${import.meta.env.BASE_URL}src/assets/img/profile-img.jpg`} className="img-fluid" alt="Profile" />
+              <img src={`${import.meta.env.BASE_URL}/assets/img/profile-img.jpg`} className="img-fluid" alt="Profile" />
             </div>
             <div className="col-lg-8 content">
               <h2>Software Developer & AI Enthusiast</h2>

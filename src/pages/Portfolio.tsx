@@ -19,11 +19,11 @@ interface PortfolioItem {
       id: "qa-agent",
       title: "QA Interview Agent",
       description: "An AI-driven interview agent for role-specific Q&A.",
-      image: `${import.meta.env.BASE_URL}src/assets/img/portfolio/app-1.jpg`,
+      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/app-1.jpg`,
       images: [
-        `${import.meta.env.BASE_URL}src/assets/img/portfolio/app-1.jpg`,
-        `${import.meta.env.BASE_URL}src/assets/img/portfolio/app-2.jpg`,
-        `${import.meta.env.BASE_URL}src/assets/img/portfolio/app-3.jpg`,
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/app-1.jpg`,
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/app-2.jpg`,
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/app-3.jpg`,
       
       ], // Added array
       category: "ML",
@@ -35,11 +35,11 @@ interface PortfolioItem {
       id: "ats-resume",
       title: "ATS Resume & Cover Letter Generator",
       description: "A tool to generate ATS-friendly resumes and cover letters.",
-      image: `${import.meta.env.BASE_URL}src/assets/img/portfolio/product-1.jpg`,
+      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/product-1.jpg`,
       images:  [
-        `${import.meta.env.BASE_URL}src/assets/img/portfolio/product-1.jpg`,
-        `${import.meta.env.BASE_URL}src/assets/img/portfolio/product-2.jpg`,
-        `${import.meta.env.BASE_URL}src/assets/img/portfolio/product-3.jpg`,
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/product-1.jpg`,
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/product-2.jpg`,
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/product-3.jpg`,
         
 
       ],

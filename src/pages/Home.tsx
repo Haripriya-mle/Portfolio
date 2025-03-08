@@ -1,12 +1,11 @@
 import React from "react";
 import "../assets/css/style.css"; // Main styles
-import heroBg from "../assets/img/hero-bg.jpg?url";
 
 const Home: React.FC = () => {
   return (
     <main className="main">
     <section id="hero" className="hero section dark-background">
-    <img src={heroBg} alt="Background" data-aos="fade-in" />
+    <img src={`${import.meta.env.BASE_URL}/assets/img/hero-bg.jpg`} alt="Background" data-aos="fade-in" />
 
       <div className="container" data-aos="zoom-out" data-aos-delay="100">
         <h2>Haripriya K H</h2>

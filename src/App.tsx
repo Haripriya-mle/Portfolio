@@ -54,7 +54,7 @@ const App: React.FC = () => {
 
   return (
     <Router basename="/Portfolio/">
-      <Navbar name="Haripriya" logo={`${import.meta.env.BASE_URL}src/assets/img/logo.png`} />
+      <Navbar name="Haripriya" logo={`${import.meta.env.BASE_URL}/assets/img/logo.png`} />
       
       <Routes>
         <Route path="/" element={<Home />} />
