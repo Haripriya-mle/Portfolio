@@ -12,6 +12,7 @@ interface PortfolioItem {
     github: string;
     blog?: string;
     vlog?: string;
+    live?: string;
   }
   
   export const portfolioData: PortfolioItem[] = [
