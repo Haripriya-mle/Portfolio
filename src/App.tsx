@@ -7,9 +7,11 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import PortfolioDetails from "./pages/PortfolioDetails";
 import About from "./pages/About";
+import Blog from "./pages/Blog";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import "bootstrap/dist/css/bootstrap.min.css";
+import BlogDetails from "./pages/BlogDetails";
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -62,6 +64,8 @@ const App: React.FC = () => {
         <Route path="/portfol/:id" element={<PortfolioDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       

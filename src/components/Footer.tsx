@@ -17,10 +17,10 @@ const Footer: React.FC = () => {
         </div>
         <div className="container">
           <div className="copyright">
-            <span>Copyright</span> <strong className="px-1 sitename">Haripriya</strong> <span>All Rights Reserved</span>
+            <span>Copyright</span> <strong className="px-1 sitename">Haripriya K H</strong> <span>All Rights Reserved</span>
           </div>
           <div className="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by <a href="#">Haripriya</a>
           </div>
         </div>
       </div>

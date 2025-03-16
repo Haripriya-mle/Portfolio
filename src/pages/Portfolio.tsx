@@ -19,34 +19,84 @@ interface PortfolioItem {
       id: "qa-agent",
       title: "QA Interview Agent",
       description: "An AI-driven interview agent for role-specific Q&A.",
-      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/app-1.jpg`,
+      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/qa_agent.jpg`,
       images: [
-        `${import.meta.env.BASE_URL}/assets/img/portfolio/app-1.jpg`,
-        `${import.meta.env.BASE_URL}/assets/img/portfolio/app-2.jpg`,
-        `${import.meta.env.BASE_URL}/assets/img/portfolio/app-3.jpg`,
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/qa_agent.jpg`,
       
       ], // Added array
       category: "ML",
-      github: "https://github.com/yourusername/qa-interview-agent",
-      blog: "https://yourblog.com/qa-agent",
-      vlog: "https://youtube.com/your-vlog-qa-agent",
+      github: "https://github.com/Haripriya-mle/qa_agent",
     },
     {
       id: "ats-resume",
       title: "ATS Resume & Cover Letter Generator",
       description: "A tool to generate ATS-friendly resumes and cover letters.",
-      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/product-1.jpg`,
+      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/resumemaker.jpg`,
       images:  [
-        `${import.meta.env.BASE_URL}/assets/img/portfolio/product-1.jpg`,
-        `${import.meta.env.BASE_URL}/assets/img/portfolio/product-2.jpg`,
-        `${import.meta.env.BASE_URL}/assets/img/portfolio/product-3.jpg`,
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/resumemaker.jpg`,
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/resumemaker_2.jpg`,
+        
+
+      ],
+      category: "ML",
+      github: "https://github.com/Haripriya-mle/resumemaker",
+      blog: "http://localhost:5173/Portfolio/blog/1",
+      vlog: "https://youtu.be/AeiK1Hn3chc",
+    },
+    
+    {
+      id: "netflix",
+      title: "netflix",
+      description: "An AI-driven interview agent for role-specific Q&A.",
+      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/qa_agent.jpg`,
+      images: [
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/qa_agent.jpg`,
+      
+      ], // Added array
+      category: "React",
+      github: "https://github.com/haripriyabce/netflix",
+    },
+    {
+      id: "olx",
+      title: "olx",
+      description: "A tool to generate ATS-friendly resumes and cover letters.",
+      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/resumemaker.jpg`,
+      images:  [
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/resumemaker.jpg`,
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/resumemaker_2.jpg`,
         
 
       ],
       category: "React",
-      github: "https://github.com/yourusername/ats-resume-generator",
-      blog: "https://yourblog.com/ats-resume",
-      vlog: "https://youtube.com/your-vlog-ats-resume",
+      github: "https://github.com/haripriyabce/olx",
+    },
+    {
+      id: "Adobe",
+      title: "QA Interview Agent",
+      description: "An AI-driven interview agent for role-specific Q&A.",
+      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/Adobe.png`,
+      images: [
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/Adobe.png`,
+      
+      ], // Added array
+      category: "HTML",
+      github: "https://github.com/haripriyabce/Adobe",
+      live:"https://haripriyabce.github.io/Adobe/",
+    },
+    {
+      id: "Zoho",
+      title: "Zoho",
+      description: "A tool to generate ATS-friendly resumes and cover letters.",
+      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/Zoho.png`,
+      images:  [
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/Zoho.png`,
+       
+        
+
+      ],
+      category: "HTML",
+      github: "https://github.com/haripriyabce/Zoho",
+      live:"https://haripriyabce.github.io/Zoho/",
     },
   ];
   
@@ -132,34 +182,49 @@ const Portfolio: React.FC = () => {
                   <p>{project.description}</p>
                
                   <Link to={`/portfol/${project.id}`} title="More Details" className="details-link"> <i className="bi bi-link-45deg"></i></Link>
-                     <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-custom-primary"
-                  >
-                    GitHub
-                  </a>
-                  {project.blog && (
-                    <a
-                      href={project.blog}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-outline-secondary mx-2"
-                    >
-                      Blog
-                    </a>
-                  )}
-                  {project.vlog && (
-                    <a
-                      href={project.vlog}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-danger"
-                    >
-                      Vlog
-                    </a>
-                  )}
+                  {project.github && (
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-custom-primary"
+  >
+    GitHub
+  </a>
+)}
+
+{project.blog && (
+  <a
+    href={project.blog}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-outline-secondary mx-2"
+  >
+    Blog
+  </a>
+)}
+
+{project.vlog && (
+  <a
+    href={project.vlog}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-danger"
+  >
+    Vlog
+  </a>
+)}
+
+{project.live && (
+  <a
+    href={project.live}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-success"
+  >
+    Live Demo
+  </a>
+)}
                 </div>
               </div>
             </div>
