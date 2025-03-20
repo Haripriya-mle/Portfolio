@@ -49,9 +49,9 @@ interface PortfolioItem {
       id: "netflix",
       title: "netflix",
       description: "An AI-driven interview agent for role-specific Q&A.",
-      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/qa_agent.jpg`,
+      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/netflix.jpg`,
       images: [
-        `${import.meta.env.BASE_URL}/assets/img/portfolio/qa_agent.jpg`,
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/netflix.jpg`,
       
       ], // Added array
       category: "React",
@@ -61,11 +61,9 @@ interface PortfolioItem {
       id: "olx",
       title: "olx",
       description: "A tool to generate ATS-friendly resumes and cover letters.",
-      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/resumemaker.jpg`,
+      image: `${import.meta.env.BASE_URL}/assets/img/portfolio/olx.png`,
       images:  [
-        `${import.meta.env.BASE_URL}/assets/img/portfolio/resumemaker.jpg`,
-        `${import.meta.env.BASE_URL}/assets/img/portfolio/resumemaker_2.jpg`,
-        
+        `${import.meta.env.BASE_URL}/assets/img/portfolio/olx.png`,        
 
       ],
       category: "React",
@@ -172,11 +170,14 @@ const Portfolio: React.FC = () => {
 
             <div key={index} className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div className="portfolio-content h-100">
-                <img
-                  src={project.image}
-                  className="img-fluid"
-                  alt={project.title}
-                />
+              <div className="image-container">
+                    <img
+                      src={project.image}
+                      className="img-fluid"
+                      alt={project.title}
+                    />
+                  </div>
+
                 <div className="portfolio-info">
 
                 <h4>{project.title}</h4>
